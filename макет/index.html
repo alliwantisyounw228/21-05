@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор кухни</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Узнайте цену <span class="red">вашей кухни</span></h1>
+
+    <!-- СТИЛЬ -->
+    <div class="section">
+      <h2>Стиль:</h2>
+      <div class="options" id="style">
+        <div class="option" data-value="modern" data-price="5000">
+          <img src="./img/1.png" alt="">
+          <p>Современный стиль</p>
+        </div>
+        <div class="option" data-value="loft" data-price="7000">
+          <img src="./img/2.png" alt="">
+          <p>Кухня Лофт</p>
+        </div>
+        <div class="option" data-value="classic" data-price="9000">
+          <img src="./img/3.png" alt="">
+          <p>Классический стиль</p>
+        </div>
+        <div class="option" data-value="other" data-price="6000">
+          <img src="./img/4.png" alt="">
+          <p>Другое</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ФОРМА -->
+    <div class="section">
+      <h2>Форма:</h2>
+      <div class="options" id="shape">
+        <div class="option" data-value="straight" data-price="3000">
+          <img src="./img/5.png" alt="">
+          <p>Прямая кухня</p>
+        </div>
+        <div class="option" data-value="corner" data-price="4000">
+          <img src="./img/6.png" alt="">
+          <p>Угловая кухня</p>
+        </div>
+        <div class="option" data-value="u-shaped" data-price="6000">
+          <img src="./img/7.png" alt="">
+          <p>П-образная кухня</p>
+        </div>
+        <div class="option" data-value="parallel" data-price="5500">
+          <img src="./img/8.png" alt="">
+          <p>Параллельная кухня</p>
+        </div>
+        <div class="option" data-value="island" data-price="7500">
+          <img src="./img/9.png" alt="">
+          <p>Кухня с островом</p>
+        </div>
+        <div class="option" data-value="other" data-price="5000">
+          <img src="./img/10.png" alt="">
+          <p>Другие формы</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ПЛОЩАДЬ -->
+    <div class="section">
+      <h2>Площадь кухни:</h2>
+      <div class="options" id="area">
+        <div class="option" data-value="5" data-price="2000"><p>До 5 м²</p></div>
+        <div class="option" data-value="8" data-price="3500"><p>До 8 м²</p></div>
+        <div class="option" data-value="15" data-price="5000"><p>До 15 м²</p></div>
+        <div class="option" data-value="other" data-price="7000"><p>Другое</p></div>
+      </div>
+    </div>
+
+    <!-- ТЕЛЕФОН -->
+    <div class="form">
+      <p class="lalala">Оставьте свой номер телефона сейчас и наш <br> дизайнер свяжется с Вами в ближайшее время!</p>
+      <div class="nana"> 
+        <button class="masha">Номер телефона</button>
+        <button onclick="calculatePrice()">Рассчитать стоимость</button>
+      </div>
+     
+      <p id="result"></p>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
