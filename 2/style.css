@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f5f7fa;
+  --accent-color: #50e3c2;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0; padding: 0; background: var(--secondary-color);
+  font-family: var(--font-family);
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh;
+}
+.calculator {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 400px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+.calculator h1 {
+  grid-column: 1 / -1;
+  margin: 0 0 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input[type="number"], select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.8px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+input[type="number"]:focus, select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.full-width {
+  grid-column: 1 / -1;
+}
+.result {
+  grid-column: 1 / -1;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  user-select: none;
+}
+.breakdown {
+  grid-column: 1 / -1;
+  font-size: 0.9rem;
+  color: #666;
+  display: none;
+  margin-top: 0.5rem;
+}
+.toggle-breakdown {
+  grid-column: 1 / -1;
+  text-align: center;
+  cursor: pointer;
+  color: var(--accent-color);
+  font-weight: 600;
+  user-select: none;
+}
+.toggle-breakdown:hover {
+  text-decoration: underline;
+}
